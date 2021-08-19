@@ -1,20 +1,26 @@
 @import url(https://fonts.googleapis.com/css?family=MonteCarlo:regular);
 @import url(https://fonts.googleapis.com/css?family=Nunito:200,200italic,300,300italic,regular,italic,600,600italic,700,700italic,800,800italic,900,900italic);
 @import url(https://fonts.googleapis.com/css?family=Mukta:200,300,regular,500,600,700,800);
-@import url(https://fonts.googleapis.com/css?family=WindSong:regular,500);
+@import url(https://fonts.googleapis.com/css?family=Crimson+Text:regular,italic,600,600italic,700,700italic);
 @import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Eczar:regular,500,600,700,800);
+
 
 body{
     height: auto;
     width: 100vw;
+    max-width: 100vw;
     overflow-x: hidden;
     padding: 0;
     margin: 0;
     display: flex;
     flex-direction: column;
     background-color: #060425;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    
+    
 }
 
 
@@ -86,7 +92,7 @@ body{
     }
 
     50%{
-        transform: translate(-400px);
+        transform: translate(-400px );
     }
     100%{
         transform: translate(0, 0);
@@ -96,24 +102,29 @@ body{
 
 .container{
     position: relative;
-    width:100vw;
+    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    padding: 60px;
+    padding: 60px 10px;
+    text-align: center;
+    
 }
+
 
 .card{
     position: relative;
     width: 300px;
     height: 215px;
     background: #857df8;
-    margin: 30px 10px;
+    border-radius: 25px;
+    margin: 30px 40px;
     padding: 20px 15px;
     display: flex;
     flex-direction: column;
-    box-shadow: 0.5px 20px rgba(0, 0, 0, 0.5);
+    box-shadow: inset 6px 6px 7px #8b8b8b,
+    inset -6px -6px 7px #8eb9fa;
     transition: ease-in-out 0.3s;
 }
 
@@ -138,9 +149,13 @@ img{
 }
 
 .card:hover{
-    height: 420px;
+    height: 350px;
 }
 
+.card:hover .img-box{
+    margin-top: 0;
+    transition: ease-in-out 3s;
+}
 .content{
     position:relative;
     margin-top: -140px;
@@ -155,20 +170,292 @@ img{
 .card:hover .content{
     visibility: visible;
     opacity: 1;
-    margin-top: -40px;
-    transition-delay: 0.3s;
-}
+    }
 
 .web-apps{
     width: 100vw;
-    height: 100vh;
     text-align: center;
+    margin-bottom: 100px;
+    
 
 }
+
+
 
 .web-apps-head{
     font-size: 50px;
-    font-family: MonteCarlo;
     color:whitesmoke;
-    font-weight:bold;
+    font-family: MonteCarlo;
+    font-weight: lighter;
 }
+
+.grid-web-apps{
+    position: relative;
+    margin:  auto;
+    height: auto;
+    
+
+}
+
+.flex{
+    position: relative;
+    width:95vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+
+.image-2{
+    width: 800px !important;
+    margin-left: -100px;
+}
+
+.web-txt-2{
+    width: 400px !important;
+    margin-left: -50px;
+}
+
+
+
+.app-image{
+    height: 400px;
+    width: 500px;
+    transition: ease-in-out 2s;
+}
+
+.web-txt{
+    width: 400px;
+    height: auto;
+    font-size: 25px;
+    color:rgb(190, 224, 255);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serifc;
+
+}
+
+
+section{
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background-color: #112d42;
+}
+
+section::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #03a9f4;
+}
+
+section .footer{
+    position: relative;
+    min-width: 1100px;
+    min-height: 550px;
+    display: flex;
+    z-index: 100;
+}
+
+
+section .footer .contactinfo{
+    position: absolute;
+    top: 40px;
+    width: 350px;
+    height: calc(100% - 180px);
+    background: #0f3959;
+    z-index: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.2)
+}
+
+
+section .footer .contactinfo h2{
+    color: #fff;
+    font-size: 24px;
+    font-weight:500;
+
+}
+
+section .footer .contactinfo .info-cont{
+    position: relative;
+    margin: 20px 0; 
+}
+
+
+section .footer .contactinfo .info-cont li{
+    position:  relative;
+    list-style: none;
+    display: flex;
+    margin: 20px 0;
+    cursor: pointer;
+    align-items: flex-start;
+}
+
+
+
+section .footer .contactinfo .info-cont li span:nth-child(1){
+    width: 30px;
+    min-width: 30px;
+}
+
+
+
+section .footer .contactinfo .info-cont li span:nth-child(1) .fas{
+    max-width: 100%;
+    filter: invert(1);
+    opacity: 0.5;
+}
+
+section .footer .contactinfo .info-cont li span:nth-child(2){
+    color: #fff;
+    margin-left: 10px;
+    font-weight: 300;
+    opacity: 0.5;
+    
+}
+
+section .footer .contactinfo .info-cont li:hover span:nth-child(1) .fas,
+section .footer .contactinfo .info-cont li:hover span:nth-child(2)
+{
+    opacity: 1;
+}
+
+
+section .footer .contactinfo .sci{
+    position: relative;
+    display: flex;
+}
+
+section .footer .contactinfo .sci li{
+    list-style: none;
+    margin-right: 15px;
+}
+
+section .footer .contactinfo .sci li a{
+    text-decoration:none;
+}
+
+section .footer .contactinfo .sci li a .fab{
+    filter: invert(1);
+    opacity: 0.5;
+}
+
+section .footer .contactinfo .sci li:hover a .fab{
+    opacity: 1;
+}
+
+section .footer .contactform{
+    position: absolute;
+    padding: 70px 50px;
+    background: #fff;
+    margin-left: 150px;
+    padding-left: 300px;
+    width: 55%;
+    height: 80%;
+    box-shadow: rgba(0, 0, 0, 0.5) 0 50px 50px;
+}
+
+section .footer .contactform h2{
+    color: #0f3959;
+    font-size: 24px;
+    font-weight:500;
+}
+
+section .footer .contactform .formbox{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 30px;
+}
+
+
+section .footer .contactform .formbox .inputbox{
+    position: relative;
+    margin: 0 0 35px 0;
+}
+
+section .footer .contactform .formbox .w50{
+    width: 45%;
+}
+section .footer .contactform .formbox .w100{
+    width: 100%;
+}
+
+section .footer .contactform .formbox .inputbox input, textarea{
+    width: 100%;
+    padding: 5px 0;
+    resize: none;
+    font-size :18px;
+    font-weight: 300;
+    color: #333;
+    border: none;
+    border-bottom: 1px solid #777;
+    outline: none;
+
+}
+
+textarea{
+    min-height: 70px;
+}
+
+
+section .footer .contactform .formbox .inputbox span{
+    position: absolute;
+    left:0;
+    padding: 5px 0;
+    font-size: 18px;
+    font-weight: 300px;
+    color: #333;
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+
+section .footer .contactform .formbox .inputbox input:focus ~ span, textarea:focus ~ span,
+section .footer .contactform .formbox .inputbox input:valid ~ span, textarea:valid ~ span{
+    transform: translateY(-20px);
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color:rgb(206, 120, 98);
+}
+
+section .footer .contactform .formbox .inputbox input[type="submit"]{
+    position: relative;
+    cursor: pointer;
+    background: #0f3959;
+    color:#fff;
+    border: none;
+    max-width: 150px;
+    padding: 12px;
+}
+
+section .footer .contactform .formbox .inputbox input[type="submit"]:hover{
+    background-color: #03a9f4;
+   
+}
+
+@media only screen and (max-width: 600px)  {
+    .navbar{
+        display: none;
+    }
+    .info::after{
+        display: none;
+    }
+}
+
+
+
+
