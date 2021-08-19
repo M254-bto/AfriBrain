@@ -33,7 +33,9 @@ body, html{
 .brand{
     margin: 30px 50px;
 }
-
+a{
+    text-decoration: none;
+}
 
 .nav{
     width: 550px;
