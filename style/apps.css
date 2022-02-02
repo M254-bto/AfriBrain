@@ -10,6 +10,8 @@
 
 
 
+
+
     
 
 .topbar{
@@ -66,7 +68,7 @@
 .info-apps{
     width: 60%;
     height: auto;
-    margin: 90px auto;
+    margin: 0 auto;
     text-align: center;
 }
 
@@ -203,17 +205,18 @@
   
 
 .web-apps{
-    width: 100vw;
+    width: 100%;
     text-align: center;
-    margin-bottom: 100px;
     display: flex;
+    
     flex-direction: column;
 }
 .apps-head{
     position: relative;
     width: 50%;
+    margin: 40px auto 0;
+
     height: auto;
-    margin: auto;
     text-align: center;
 }
 
@@ -268,24 +271,18 @@
 
 .range-desc-txt{
     width: 40%;
-    margin: 0 auto;
+    height: auto;
+    margin: 0 auto 30px;
     font-size: 20px;
     color:rgb(190, 224, 255);
     font-weight: 300;
 }
 
-.range-desc-txt::after{
-    position:  absolute;
-    content: "";
-    width: 200px;
-    height: 5px;
-    background-color: salmon;
-    left: auto;
-    right: auto;
-}
+
 .range{
+    top: 50px;
     min-height: 100vh;
-    max-width: 88%;
+    max-width: 100%;
     display: flex;
     justify-content: center;
 }
@@ -466,11 +463,12 @@ section .footer .contactinfo .sci li:hover a .fab{
 section .footer .contactform{
     position: absolute;
     padding: 70px 50px;
-    background: #fff;
+    background: rgb(235, 241, 253);
     margin-left: 150px;
-    padding-left: 250px;
-    width: 800px;
-    height: 500px;
+    padding-left: 230px;
+    width: 70%;
+    min-height: 500px;
+    height: auto;
     box-shadow: rgba(0, 0, 0, 0.5) 0 50px 50px;
 }
 
@@ -491,7 +489,7 @@ section .footer .contactform .formbox{
 
 section .footer .contactform .formbox .inputbox{
     position: relative;
-    margin: 0 0 35px 0;
+    margin: 10px 0 35px 0;
 }
 
 section .footer .contactform .formbox .w50{
@@ -508,6 +506,7 @@ section .footer .contactform .formbox .inputbox input, textarea{
     font-size :18px;
     font-weight: 300;
     color: #333;
+    background-color: rgb(235, 241, 253);
     border: none;
     border-bottom: 1px solid #777;
     outline: none;

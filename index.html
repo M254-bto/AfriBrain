@@ -8,27 +8,28 @@
   <link rel="stylesheet" href="./style/stylus.css">
   <link rel="stylesheet" href="./style/apps.css">
   <link rel="stylesheet" href="./style/cards.css">
-  <link rel="stylesheet" href="style/quote.css">
+  <link rel="stylesheet" href="style/queries.css">
   <link rel="stylesheet" href="./style/ims.css"> 
  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
    
   <title>AfriBrain Technologies</title> 
 </head>
 <body>
-  <div class="topbar">
-    
-    <div class="bespoke">
-        <h1 class="bspk">AfriBrain Bespoke</h1>
-    </div>
-<nav class="navbar">
-    <li class="nav-item item1">websites</li>
-    <li class="nav-item item1">mobile</li>
-    <li class="nav-item item2">IMS systems</li>
-    <li class="nav-item item3">ML/AI</li>
-    <li class="nav-item item4">contact us!</li>
+  
+  <header class="header">
+    <a href="" class="logo">AfriBrain Bespoke</a>
+    <input class="menu-btn" type="checkbox" id="menu-btn" />
+    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+    <ul class="menu">
+      <li><a href="#webapps">websites</a></li>
+      <li><a href="#mobi">apps</a></li>
+      <li><a href="#ims">IMS systems</a></li>
+      <li><a href="#contact">Contact</a></li>
 
-</nav>
-</div>
+       
+    </ul>
+  </header>
+
    <div class="containering">
      
     
@@ -40,21 +41,30 @@
          <div class="desc">
            <h1 class="desc-txt">We bring bespoke software for those who reject conformity and cultivate their own unique vision.We embrace rarity in its most authentic form so that the outcome serves you best.</h1>
          </div>
-         <a href="#" class="btn-flip" data-back="More >>" data-front="Here"></a>        
+
+      
+      <a href="service-quote.html" class="btn-flip" data-back="Lets Go!" data-front="Here"></a>        
+     
         </div>
      <div class="svg">
        <img src="./Image/icomp-removebg-preview.png" alt="" srcset="">
       </div>
     </div>
 
-    
-    <div class="web-apps">
+    <a href="#webapps">
+      <div class="box">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </a>
+    <div class="web-apps" id="webapps">
       <div class="apps-head">
       <h1 class="web-apps-head">Websites and web apps</h1>
       
          </div>
          <div class="web-apps-desc">
-           <p class="web-apps-desc-txt">No two people are the same so, we believe, neither should websites. Your website shouls be part of your uniqueness.</p>
+           <p class="web-apps-desc-txt">People can't be the same, we believe, neither should websites. Your website shouls be part of your uniqueness.</p>
          </div>
 
          <div class="web-apps-container">
@@ -117,7 +127,7 @@
                         </li>
                       </ul>
                 
-                      <button class="card__button">Choose this plan</button>
+                      <a href="service-quote.html"><button class="card__button">Hire Us</button></a>
                     </article>
                 
                     <!--==================== CARD 2 ====================-->
@@ -156,8 +166,8 @@
                           </li>
                         </ul>
                 
-                      <button class="card__button">Choose this plan</button>
-                    </article>
+                        <a href="service-quote.html"><button class="card__button">Hire Us</button></a>
+                      </article>
                 
                     <!--==================== CARD 3 ====================-->
                     <article class="card__content grid">
@@ -195,7 +205,7 @@
                           </li>
                         </ul>
                 
-                      <button class="card__button">Choose this plan</button>
+                      <a href="service-quote.html"><button class="card__button">Hire Us</button></a>
                     </article>
                   </div>
               </div>
@@ -206,12 +216,12 @@
           </div>
 
 
-  <div class="info-apps">
+  <div class="info-apps" id="mobi">
       <h2 class="mobile">Mobile apps</h2>
       <h1 class="info-txt">Heading to a mobile-first world, your business needs to look good on mobile devices of all sizes and across all platforms. Afribrain technology presents software of Impeccable Quality. Here we create bespoke mobile apps specific to your needs </h1>
   </div>
   
-
+<a href="service-quote.html">
   <div class="container-mobile">
     <div class="block">
       <div class="overlay"></div>
@@ -240,8 +250,9 @@
       </div>
     </div>
   </div>
+</a>
 
- <div class="ims">
+ <div class="ims" id="ims">
 
       <div class="ims-heading">
            <h1>Information Management systems.</h1>
@@ -301,8 +312,6 @@
           <a href="#"><button>Read more</button></a>
       </div>
   </div>
-</div>
-<div class="ims-card-flex">
 <div class="ims-card">
   <div class="skewed">
       <img src="./Image/crm.jpg" alt="" class="ims-img img1">
@@ -345,7 +354,7 @@
 </div>
 
 <div class="ims-card-content">
-<h2>Learners Management Systems <p>LMS</p></h2>
+<h2>Learner Management Systems <p>LMS</p></h2>
 <p id="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
 <a href="#"><button>Read more</button></a>
 </div>
@@ -362,7 +371,7 @@
 
   
           <section>
-      <footer class="footer">
+      <footer class="footer" id='contact'>
           <div class="contactinfo">
               <div class="#">
                   <h2 class="cont">Contact info</h2>
